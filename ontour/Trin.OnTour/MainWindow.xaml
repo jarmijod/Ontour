@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions >
+        <Button Name="BTN_NC" Content="Nuevo Contrato" Grid.Row="1"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
+        <Button Name="BTN_NA" Content="Nuevo Apoderado" Grid.Row="1"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
+        <Button Name="BTN_BC" Content="Buscar Contrato" Grid.Row="2"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
+        <Button Content="Subir Documento" Grid.Row="2"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
+        <Button Name="BTN_S" Content="Salir" Grid.Row="3"  Margin="60,10,60,10" Grid.Column="0" Click="Button_Click"></Button>
+
+
     </Grid>
 </Window>
