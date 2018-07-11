@@ -1,0 +1,2 @@
+CREATE DATABASE OnTour
+GO
