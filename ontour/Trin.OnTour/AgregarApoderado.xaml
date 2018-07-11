@@ -1,0 +1,31 @@
+﻿<Window x:Class="Trin.OnTour.AgregarApoderado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trin.OnTour"
+        mc:Ignorable="d"
+        Title="AgregarApoderado" Height="471" Width="440">
+    <Grid>
+        <Button x:Name="BTN_ingresarA" Content="Ingresar" HorizontalAlignment="Left" Margin="292,381,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="35" Click="BTN_ingresarA_Click"/>
+        <Label Content="Nombre Apoderado" HorizontalAlignment="Left" Margin="45,68,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Nombre Alumno" HorizontalAlignment="Left" Margin="45,151,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Numero Telefonico" Margin="45,194,58.2,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Correo Electronico" HorizontalAlignment="Left" Margin="45,235,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Edad Alumno" HorizontalAlignment="Left" Margin="247,277,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Edad Apoderado" HorizontalAlignment="Left" Margin="45,277,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="BTN_cancelarA" Content="Cancelar" HorizontalAlignment="Left" Margin="45,380,0,0" VerticalAlignment="Top" Width="90" Height="35" FontSize="16"/>
+        <TextBox x:Name="TXT_nombreAP" HorizontalAlignment="Left" Height="23" Margin="184,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="TXT_nombreAL" HorizontalAlignment="Left" Height="23" Margin="184,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="TXT_numeroT" HorizontalAlignment="Left" Height="23" Margin="184,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="TXT_correoE" HorizontalAlignment="Left" Height="23" Margin="184,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="TXT_edadAL" HorizontalAlignment="Left" Height="23" Margin="345,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox x:Name="TXT_edadAP" HorizontalAlignment="Left" Height="23" Margin="184,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Nuevo Apoderado" HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Rut Apoderado" HorizontalAlignment="Left" Margin="45,107,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="TXT_rutAP" HorizontalAlignment="Left" Height="23" Margin="184,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="TXT_RutRP" HorizontalAlignment="Left" Height="23" Margin="184,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged_1"/>
+        <Label Content="Rut Representante" HorizontalAlignment="Left" Margin="51,322,0,0" VerticalAlignment="Top"  FontSize="14"/>
+
+    </Grid>
+</Window>
