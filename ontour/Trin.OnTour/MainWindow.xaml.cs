@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trin.OnTour.Business;
 
 namespace Trin.OnTour
 {
@@ -23,6 +24,8 @@ namespace Trin.OnTour
         public MainWindow()
         {
             InitializeComponent();
+
+            new Class2().Foo();
         }
     }
 }
