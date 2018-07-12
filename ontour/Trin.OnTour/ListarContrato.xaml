@@ -20,7 +20,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <ComboBox x:Name="CbSexo" Grid.Row="0" Grid.Column="0" Margin="20 10 40 10"/>
+        <ComboBox x:Name="Filtrar" Grid.Row="0" Grid.Column="0" Margin="20 10 40 10"/>
 
         <Button x:Name="BTN_volver" Grid.Row="2" Grid.Column="0" Content="Volver" Margin="20 10 40 10" Click="Button_Click"/>
         <Button x:Name="BTN_verC" Grid.Row="2" Grid.Column="2" Content="Ver Clientes" Margin="20 10 40 10" Click="Button_Click"/>

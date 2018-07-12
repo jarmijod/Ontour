@@ -20,7 +20,7 @@
         <Button Name="BTN_NC" Content="Nuevo Contrato" Grid.Row="1"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
         <Button Name="BTN_NA" Content="Nuevo Apoderado" Grid.Row="1"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
         <Button Name="BTN_BC" Content="Buscar Contrato" Grid.Row="2"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
-        <Button Content="Subir Documento" Grid.Row="2"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
+        <Button Name="BTN_RP" Content="Registrar Pago" Grid.Row="2"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
         <Button Name="BTN_S" Content="Salir" Grid.Row="3"  Margin="60,10,60,10" Grid.Column="0" Click="Button_Click"></Button>
 
 

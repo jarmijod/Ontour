@@ -7,25 +7,48 @@
         mc:Ignorable="d"
         Title="AgregarApoderado" Height="471" Width="440">
     <Grid>
-        <Button x:Name="BTN_ingresarA" Content="Ingresar" HorizontalAlignment="Left" Margin="292,381,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="35" Click="BTN_ingresarA_Click"/>
-        <Label Content="Nombre Apoderado" HorizontalAlignment="Left" Margin="45,68,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Nombre Alumno" HorizontalAlignment="Left" Margin="45,151,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Numero Telefonico" Margin="45,194,58.2,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Correo Electronico" HorizontalAlignment="Left" Margin="45,235,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Edad Alumno" HorizontalAlignment="Left" Margin="247,277,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Edad Apoderado" HorizontalAlignment="Left" Margin="45,277,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Button x:Name="BTN_cancelarA" Content="Cancelar" HorizontalAlignment="Left" Margin="45,380,0,0" VerticalAlignment="Top" Width="90" Height="35" FontSize="16"/>
-        <TextBox x:Name="TXT_nombreAP" HorizontalAlignment="Left" Height="23" Margin="184,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="TXT_nombreAL" HorizontalAlignment="Left" Height="23" Margin="184,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="TXT_numeroT" HorizontalAlignment="Left" Height="23" Margin="184,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="TXT_correoE" HorizontalAlignment="Left" Height="23" Margin="184,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
-        <TextBox x:Name="TXT_edadAL" HorizontalAlignment="Left" Height="23" Margin="345,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
-        <TextBox x:Name="TXT_edadAP" HorizontalAlignment="Left" Height="23" Margin="184,283,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Nuevo Apoderado" HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label Content="Rut Apoderado" HorizontalAlignment="Left" Margin="45,107,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="TXT_rutAP" HorizontalAlignment="Left" Height="23" Margin="184,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged_1"/>
-        <TextBox x:Name="TXT_RutRP" HorizontalAlignment="Left" Height="23" Margin="184,326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156" TextChanged="TextBox_TextChanged_1"/>
-        <Label Content="Rut Representante" HorizontalAlignment="Left" Margin="51,322,0,0" VerticalAlignment="Top"  FontSize="14"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+
+        </Grid.RowDefinitions >
+        <Button Grid.Row="9" Grid.Column="1" x:Name="BTN_ingresarA" Content="Ingresar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90" FontSize="16" Height="35" Click="BTN_ingresarA_Click"/>
+        <Button Grid.Row="9" Grid.Column="0" x:Name="BTN_cancelarA" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="35" FontSize="16"/>
+
+        <CheckBox Grid.Row="8" Grid.Column="1" Content="Representante" FontSize="14" x:Name="Representante"/>
+        
+        <Label Grid.Row="0" Grid.Column="0" Content="Nuevo Apoderado" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="24"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Nombre Apoderado" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Rut Apoderado" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Rut Alumno" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Numero Telefonico" VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Edad Alumno" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="7" Grid.Column="0" Content="Edad Apoderado" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+       
+
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="TXT_nombreAP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="TXT_rutAP" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" VerticalAlignment="Top" Width="156" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="TXT_rutAL" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" VerticalAlignment="Top" Width="156" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="TXT_numeroT" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="TXT_correoE" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="TXT_edadAL" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox Grid.Row="7" Grid.Column="1" x:Name="TXT_edadAP" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+       
+        
+       
 
     </Grid>
 </Window>
