@@ -1,4 +1,4 @@
-namespace Trin.OnTour.Data.Models
+namespace Trin.OnTour.Data
 {
     using System;
     using System.Data.Entity;

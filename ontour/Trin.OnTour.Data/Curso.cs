@@ -1,4 +1,4 @@
-namespace Trin.OnTour.Data.Models
+namespace Trin.OnTour.Data
 {
     using System;
     using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Trin.OnTour.Data.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Codigo { get; set; }
+        public long Codigo { get; set; }
 
         [Required]
         [StringLength(3)]

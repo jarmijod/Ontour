@@ -1,4 +1,4 @@
-namespace Trin.OnTour.Data.Models
+namespace Trin.OnTour.Data
 {
     using System;
     using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace Trin.OnTour.Data.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Codigo { get; set; }
+        public long Codigo { get; set; }
 
         public int Monto { get; set; }
 
@@ -19,7 +19,7 @@ namespace Trin.OnTour.Data.Models
         [StringLength(10)]
         public string RutApoderado { get; set; }
 
-        public int CodigoContrato { get; set; }
+        public long CodigoContrato { get; set; }
 
         public virtual Apoderado Apoderado { get; set; }
 

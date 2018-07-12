@@ -1,4 +1,4 @@
-namespace Trin.OnTour.Data.Models
+namespace Trin.OnTour.Data
 {
     using System;
     using System.Collections.Generic;
@@ -25,7 +25,7 @@ namespace Trin.OnTour.Data.Models
 
         public int MontoAportado { get; set; }
 
-        public int CodigoCurso { get; set; }
+        public long CodigoCurso { get; set; }
 
         public virtual Curso Curso { get; set; }
 

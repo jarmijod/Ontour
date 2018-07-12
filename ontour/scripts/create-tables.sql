@@ -17,7 +17,7 @@ CREATE TABLE Representante(
 GO
 
 CREATE TABLE Curso(
-	Codigo INT PRIMARY KEY,
+	Codigo BIGINT PRIMARY KEY,
 	Alias NVARCHAR(3) NOT NULL,
 	Establecimiento NVARCHAR(30) NOT NULL,
 	CantidadAlumnos INT NOT NULL CHECK(CantidadAlumnos BETWEEN 0 AND 60),
@@ -31,7 +31,7 @@ CREATE TABLE Apoderado(
 	-- Por seguridad, la empresa solo conserva el RUT del alumno
 	RutAlumno NVARCHAR(10) NOT NULL UNIQUE,
 	MontoAportado INT NOT NULL,
-	CodigoCurso INT NOT NULL FOREIGN KEY REFERENCES Curso(Codigo)
+	CodigoCurso BIGINT NOT NULL FOREIGN KEY REFERENCES Curso(Codigo)
 )
 GO
 
@@ -48,25 +48,25 @@ CREATE TABLE PaqueteTuristico(
 GO
 
 CREATE TABLE Contrato(
-	Codigo INT PRIMARY KEY,
+	Codigo BIGINT PRIMARY KEY,
 	CantidadDias INT NOT NULL,
 	RutEjecutivo NVARCHAR(10) NOT NULL,
-	CodigoCurso INT FOREIGN KEY REFERENCES CURSO(Codigo),
+	CodigoCurso BIGINT FOREIGN KEY REFERENCES CURSO(Codigo),
 	CodigoPaqueteTuristico NVARCHAR(5) FOREIGN KEY REFERENCES PaqueteTuristico(Codigo),
 	CHECK(dbo.IsCantidadDiasInRange(CodigoPaqueteTuristico, CantidadDias) = 1)
 )
 GO
 
 CREATE TABLE DetallePago(
-	Codigo INT PRIMARY KEY,
+	Codigo BIGINT PRIMARY KEY,
 	Monto INT NOT NULL CHECK(monto > 0),
 	RutApoderado NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES Apoderado(Rut),
-	CodigoContrato INT NOT NULL FOREIGN KEY REFERENCES Contrato(Codigo)
+	CodigoContrato BIGINT NOT NULL FOREIGN KEY REFERENCES Contrato(Codigo)
 )
 GO
 
 CREATE TABLE PagoDeposito(
-	Codigo INT PRIMARY KEY REFERENCES DetallePago(Codigo),
+	Codigo BIGINT PRIMARY KEY REFERENCES DetallePago(Codigo),
 	EntidadBancaria NVARCHAR(20) NOT NULL,
 	ComprobantePago NVARCHAR(40) NOT NULL
 )
