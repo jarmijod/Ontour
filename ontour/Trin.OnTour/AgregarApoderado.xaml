@@ -25,7 +25,6 @@
 
         </Grid.RowDefinitions >
         <Button Grid.Row="9" Grid.Column="1" x:Name="BTN_ingresarA" Content="Ingresar" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="90" FontSize="16" Height="35" Click="BTN_ingresarA_Click"/>
-        <Button Grid.Row="9" Grid.Column="0" x:Name="BTN_cancelarA" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="35" FontSize="16"/>
 
         <CheckBox Grid.Row="8" Grid.Column="1" Content="Representante" FontSize="14" x:Name="Representante"/>
         
@@ -35,8 +34,8 @@
         <Label Grid.Row="3" Grid.Column="0" Content="Rut Alumno" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"/>
         <Label Grid.Row="4" Grid.Column="0" Content="Numero Telefonico" VerticalAlignment="Top" FontSize="14"/>
         <Label Grid.Row="5" Grid.Column="0" Content="Correo Electronico" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"/>
-        <Label Grid.Row="6" Grid.Column="0" Content="Edad Alumno" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
-        <Label Grid.Row="7" Grid.Column="0" Content="Edad Apoderado" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Establecimiento" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+        <Label Grid.Row="7" Grid.Column="0" Content="Curso" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
        
 
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="TXT_nombreAP" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
@@ -44,8 +43,8 @@
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="TXT_rutAL" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" VerticalAlignment="Top" Width="156" />
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="TXT_numeroT" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
         <TextBox Grid.Row="5" Grid.Column="1" x:Name="TXT_correoE" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
-        <TextBox Grid.Row="6" Grid.Column="1" x:Name="TXT_edadAL" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
-        <TextBox Grid.Row="7" Grid.Column="1" x:Name="TXT_edadAP" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="52"/>
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="CbEstablecimiento" HorizontalAlignment="Left" Height="23" Text="" VerticalAlignment="Top" Width="52" TextChanged="CbEstablecimiento_TextChanged"/>
+        <ComboBox Grid.Row="7" Grid.Column="1" x:Name="CbCurso" HorizontalAlignment="Left" Height="23"  Text="" VerticalAlignment="Top" Width="52"/>
        
         
        

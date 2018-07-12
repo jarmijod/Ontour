@@ -53,6 +53,6 @@ $@"Codigo : {self.Codigo},
         public static string ObtenerInfo(this PagoDeposito self) =>
 $@"{self.DetallePago.ObtenerInfo()},
   Banco : {self.EntidadBancaria},
-  Comprobante : {self.ComprobantePago}"
+  Comprobante : {self.ComprobantePago}";
     }
 }

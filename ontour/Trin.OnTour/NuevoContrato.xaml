@@ -29,8 +29,6 @@
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="TXT_CantDias" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="TXT_CodCurso" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="TXT_CodPaquete" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
-
-        <Button Content="Volver" Name="BTN_Volver" Grid.Row="5" Grid.Column="0" Margin="10" Click="BtnVolver_Click" FontSize="22"/>
         <Button Content="Continuar" Name="BTN_Continuar" Grid.Row="5" Grid.Column="1" Margin="10" Click="BtnContinuar_Click" FontSize="22"/>
 
 

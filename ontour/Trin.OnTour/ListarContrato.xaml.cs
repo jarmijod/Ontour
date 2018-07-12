@@ -12,17 +12,26 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trin.OnTour.Business;
 
 namespace Trin.OnTour
 {
     /// <summary>
     /// Lógica de interacción para BuscarContrato.xaml
     /// </summary>
-    public partial class BuscarContrato : Page
+    public partial class BuscarContrato : Window
     {
+        AdministracionViajes Viajes { get; }
+
         public BuscarContrato()
         {
             InitializeComponent();
+            Viajes = new AdministracionViajes();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DtgClientes.ItemsSource = Viajes.GetAllContratos();
         }
     }
 }

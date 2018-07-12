@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Trin.OnTour.Business;
 
 namespace Trin.OnTour
 {
@@ -19,9 +20,31 @@ namespace Trin.OnTour
     /// </summary>
     public partial class ConfirmarPago : Window
     {
-        public ConfirmarPago()
+        AdministracionViajes Viajes { get; }
+
+        string RutApoderado;
+        int Monto;
+        long Contrato;
+
+        public ConfirmarPago(string rutAp, int monto, long contrato)
         {
             InitializeComponent();
+            Viajes = new AdministracionViajes();
+            RutApoderado = rutAp;
+            Monto = monto;
+            Contrato = contrato;
+        }
+
+        private async void BtnContinuar_Click(object sender, RoutedEventArgs e)
+        {
+            var ct = Viajes.RegistrarDeposito(
+                RutApoderado,
+                Monto,
+                Contrato,
+                TXT_EntadadB.Text,
+                TXT_Comprobante.Text);
+
+            MessageBox.Show((await ct).msg);
         }
     }
 }

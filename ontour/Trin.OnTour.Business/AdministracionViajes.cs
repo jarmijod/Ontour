@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace Trin.OnTour.Business
     public class AdministracionViajes
     {
         protected OnTourContext Context { get; }
+
+        public AdministracionViajes() : this(new OnTourContext()) { }
 
         public AdministracionViajes(OnTourContext context) => Context = context ?? throw new ArgumentNullException(nameof(context));
 
@@ -86,5 +89,7 @@ namespace Trin.OnTour.Business
             }
             catch (Exception e) { return (false, e.Message); }
         }
+
+        public IEnumerable GetAllContratos() => Context.Contrato.ToList();
     }
 }

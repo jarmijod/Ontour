@@ -24,8 +24,36 @@ namespace Trin.OnTour
         public MainWindow()
         {
             InitializeComponent();
+        }
 
-            new Class2().Foo();
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new ListarApoderados().ShowDialog();
+        }
+
+        private void BTN_BC_Click(object sender, RoutedEventArgs e)
+        {
+            new BuscarContrato().ShowDialog();
+        }
+
+        private void BTN_NA_Click(object sender, RoutedEventArgs e)
+        {
+            new AgregarCurso().ShowDialog();
+        }
+
+        private void BTN_RP_Click(object sender, RoutedEventArgs e)
+        {
+            new AgregarApoderado().ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new NuevoContrato().ShowDialog();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            new Window1().ShowDialog();
         }
     }
 }

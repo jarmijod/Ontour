@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace Trin.OnTour.Business
     public class AdministracionClientes
     {
         protected OnTourContext Context { get; }
+
+        public AdministracionClientes() : this(new OnTourContext()) { }
 
         public AdministracionClientes(OnTourContext context) => Context = context ?? throw new ArgumentNullException(nameof(context));
 
@@ -92,5 +95,11 @@ namespace Trin.OnTour.Business
             }
             catch (Exception e) { return (false, e.Message); }
         }
+
+        public IEnumerable GetAllCursos(string establecimiento) => Context.Curso.Where(x => x.Establecimiento.Equals(establecimiento)).ToList();
+
+        public long GetIdCurso(Object obj) => ((Curso)obj).Codigo;
+
+        public IEnumerable GetAllApoderados() => Context.Apoderado.ToList();
     }
 }

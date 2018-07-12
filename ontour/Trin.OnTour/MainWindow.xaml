@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -17,11 +18,13 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions >
-        <Button Name="BTN_NC" Content="Nuevo Contrato" Grid.Row="1"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
-        <Button Name="BTN_NA" Content="Nuevo Apoderado" Grid.Row="1"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
-        <Button Name="BTN_BC" Content="Buscar Contrato" Grid.Row="2"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
-        <Button Name="BTN_RP" Content="Registrar Pago" Grid.Row="2"  Margin="40 20" Grid.Column="1" Click="Button_Click"></Button>
-        <Button Name="BTN_S" Content="Salir" Grid.Row="3"  Margin="60,10,60,10" Grid.Column="0" Click="Button_Click"></Button>
+        <Button Name="BTN_NC" Content="Buscar Apoderado" Grid.Row="1"  Margin="40 20" Grid.Column="0" Click="Button_Click"></Button>
+        <Button Name="BTN_NA" Content="Nuevo Curso" Grid.Row="1"  Margin="40 20" Grid.Column="1" Click="BTN_NA_Click"></Button>
+        <Button Name="BTN_BC" Content="Buscar Contrato" Grid.Row="2"  Margin="40 20" Grid.Column="0" Click="BTN_BC_Click"  ></Button>
+        <Button Name="BTN_RP" Content="Nuevo Apoderado" Grid.Row="2"  Margin="40 20" Grid.Column="1" Click="BTN_RP_Click"  ></Button>
+        <Button Content="Nuevo Contrato" Grid.Row="1"  Margin="40 20" Grid.Column="2" Click="Button_Click_1"  ></Button>
+        <Button Content="Nuevo Pago" Grid.Row="2"  Margin="40 20" Grid.Column="2" Click="Button_Click_2"  ></Button>
+        <Button Name="BTN_S" Content="Salir" Grid.Row="3"  Margin="60,10,60,10" Grid.Column="0"  ></Button>
 
 
     </Grid>

@@ -30,8 +30,6 @@
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="TXT_rutR" HorizontalAlignment="Left" Height="32"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="TXT_institucion" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="TXT_Curso" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49" />
-
-        <Button Content="Volver" Name="BTN_Volver" Grid.Row="6" Grid.Column="0" Margin="10" FontSize="22"/>
-        <Button Content="Confirmar" Name="BTN_ConFirmar" Grid.Row="6" Grid.Column="1" Margin="10" FontSize="22"/>
+        <Button Content="Confirmar" Name="BTN_ConFirmar" Grid.Row="6" Grid.Column="1" Margin="10" FontSize="22" Click="BTN_ConFirmar_Click"/>
     </Grid>
 </Window>

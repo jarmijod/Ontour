@@ -9,8 +9,6 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
             <RowDefinition Height="4.5*"/>
             <RowDefinition Height="1.2*"/>
         </Grid.RowDefinitions>
@@ -23,20 +21,12 @@
         </Grid.ColumnDefinitions>
 
 
-        <Button Grid.Row="4" Grid.Column="0" Content="Volver" Margin="5" Click="Button_Click"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="Mostrar" Margin="5" Click="Button_Click"/>
 
         <Label Grid.Row="0" Grid.Column="2" Content="Apoderados" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="44"/>
-        <Label Grid.Row="0" Grid.Column="0" Content="N°Contrato" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Institucion" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Curso" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-        <Label Grid.Row="1" Grid.Column="3" Content="Monto Total" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-        <Label Grid.Row="2" Grid.Column="3" Content="META" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"/>
-
-        <TextBox Name="TXT_COD" Grid.Row="0" Grid.Column="1"       Margin="5"/>
-        <TextBox Name="TXT_INS" Grid.Row="1" Grid.Column="1"       Margin="5"/>
         <TextBox Name="TXT_CURSO" Grid.Row="2" Grid.Column="1"       Margin="5"/>
         <TextBox Name="TXT_MONTOT" Grid.Row="1" Grid.Column="4"       Margin="5"/>
         <TextBox Name="TXT_META" Grid.Row="2" Grid.Column="4"       Margin="5"/>
-        <DataGrid x:Name="DtgClientes" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" Margin="10" BorderThickness="1"/>
+        <DataGrid x:Name="DtgClientes" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" Margin="10" BorderThickness="1"/>
     </Grid>
 </Window>
