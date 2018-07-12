@@ -7,31 +7,32 @@
         mc:Ignorable="d"
         Title="NuevoContrato" Height="570.042" Width="440.503">
     <Grid>
-        <Label Content="Institucion" HorizontalAlignment="Left" Margin="134,86,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.5,0.5" Height="33" Width="79"/>
-        <Label Content="Nombre representante" HorizontalAlignment="Left" Margin="52,197,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.333,0.453" Height="33" Width="160"/>
-        <Label Content="Cantidad de alumnos" HorizontalAlignment="Left" Margin="65,124,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="1.97,-0.615" Height="33" Width="150"/>
-        <Label Content="Correo electronico" HorizontalAlignment="Left" Margin="80,235,0,0" VerticalAlignment="Top" FontSize="14" Width="132" Height="34"/>
-        <Label Content="Curso" HorizontalAlignment="Left" Margin="268,124,0,0" FontSize="14" VerticalAlignment="Top" Height="33" Width="48"/>
-        <Label Content="Rut representante" HorizontalAlignment="Left" Margin="84,162,0,0" FontSize="14" VerticalAlignment="Top" Height="30" Width="128"/>
-        <TextBox x:Name="TXT_institucion" HorizontalAlignment="Left" Height="20" Margin="220,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" RenderTransformOrigin="0.5,0.5"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.7*"/>
+        </Grid.RowDefinitions >
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Contratos Giras De Estudio" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="24"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Rut Ejecutivo" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" />
+        <Label Grid.Row="2" Grid.Column="0" Content="Cantidad de Dias" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" />
+        <Label Grid.Row="3" Grid.Column="0" Content="Codigo de Curso" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" />
+        <Label Grid.Row="4" Grid.Column="0" Content="Codigo de Paquete" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" />
 
-        <TextBox x:Name="TXT_cantidadAL" HorizontalAlignment="Left" Height="21" Margin="220,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="43"/>
-        <TextBox x:Name="TXT_rutR" HorizontalAlignment="Left" Height="20" Margin="220,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="128"/>
-        <TextBox x:Name="TXT_nombreR" HorizontalAlignment="Left" Height="19" Margin="220,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
-        <TextBox x:Name="TXT_correoR" HorizontalAlignment="Left" Height="19" Margin="220,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
-        <TextBox x:Name="TXT_curso" HorizontalAlignment="Left" Height="21" Margin="322,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.527,0.157"/>
-        <Button x:Name="BTN_volver1" Content="Volver" HorizontalAlignment="Left" Margin="47,479,0,0" VerticalAlignment="Top" Width="96" Height="34" FontSize="14"/>
-        <Button x:Name="BTN_siguiente" Content="siguiente" HorizontalAlignment="Left" Margin="312,479,0,0" VerticalAlignment="Top" Width="96" Height="34" RenderTransformOrigin="-1.876,1.55" FontSize="14" Click="BTN_siguiente_Click"/>
-        <Label Content="Contratos Giras De Estudio" HorizontalAlignment="Left" Margin="84,17,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label Content="Destino" HorizontalAlignment="Left" Margin="135,315,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="61"/>
-        <Label Content="Fecha Viaje" HorizontalAlignment="Left" Margin="112,355,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="85"/>
-        <Label Content="Fecha Retorno" HorizontalAlignment="Left" Margin="91,397,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="105"/>
-        <Label Content="Meta Recaudacion" HorizontalAlignment="Left" Margin="78,437,0,0" VerticalAlignment="Top" FontSize="14" Height="37" Width="131"/>
-        <DatePicker x:Name="DP_retorno" HorizontalAlignment="Left" Margin="220,400,0,0" VerticalAlignment="Top" Width="88" Text="" Height="20"/>
-        <DatePicker x:Name="DP_viaje" HorizontalAlignment="Left" Margin="220,359,0,0" VerticalAlignment="Top" Width="88" Height="20"/>
-        <TextBox x:Name="TXT_destino" HorizontalAlignment="Left" Height="19" Margin="220,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
-        <TextBox x:Name="TXT_metaR" HorizontalAlignment="Left" Height="19" Margin="220,442,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
-        <TextBox x:Name="TXT_telefonoR" HorizontalAlignment="Left" Height="19" Margin="220,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Telefono representante" HorizontalAlignment="Left" Margin="47,274,0,0" VerticalAlignment="Top" FontSize="14" Height="36" Width="162"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="TXT_RutEjecutivo" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="TXT_CantDias" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="TXT_CodCurso" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="TXT_CodPaquete" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" />
+
+        <Button Content="Volver" Name="BTN_Volver" Grid.Row="5" Grid.Column="0" Margin="10" Click="BtnVolver_Click" FontSize="22"/>
+        <Button Content="Continuar" Name="BTN_Continuar" Grid.Row="5" Grid.Column="1" Margin="10" Click="BtnContinuar_Click" FontSize="22"/>
+
+
     </Grid>
 </Window>

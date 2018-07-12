@@ -63,11 +63,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ConfirmarPago.xaml.cs">
+      <DependentUpon>ConfirmarPago.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EfectuarPago.xaml.cs">
+      <DependentUpon>EfectuarPago.xaml</DependentUpon>
+    </Compile>
     <Page Include="AgregarApoderado.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BuscarContrato.xaml">
+    <Page Include="ConfirmarPago.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NuevoCurso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarContrato.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,12 +96,15 @@
     <Compile Include="AgregarApoderado.xaml.cs">
       <DependentUpon>AgregarApoderado.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NuevoCurso.xaml.cs">
+      <DependentUpon>NuevoCurso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BuscarContrato.xaml.cs">
-      <DependentUpon>BuscarContrato.xaml</DependentUpon>
+    <Compile Include="ListarContrato.xaml.cs">
+      <DependentUpon>ListarContrato.xaml</DependentUpon>
     </Compile>
     <Compile Include="ListarApoderados.xaml.cs">
       <DependentUpon>ListarApoderados.xaml</DependentUpon>
@@ -97,6 +114,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="NuevoContrato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EfectuarPago.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
